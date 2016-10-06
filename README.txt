@@ -58,3 +58,4 @@ edge case scenarios:
 (3)  If an admin who is not the preconfigured admin tries to delete itself or delete the preconfigured admin, the system will pop up an error message.
 (4)  If the preconfigured admin tries to delete itself, the system will pop up an error,too. The attempt will be prevented.
 (5)  If a user tries to book a room ahead of the present time or 7 days after present time, there will also be an error. This attempt will be unsuccessfull.
+(6)  If a library member request to book the same room multiple times, only when the slot is not available(time conflict detected) will the request be rejected. If the member book the same room from 2pm to 4pm and then 5pm to 7pm, these 2 requests will both be successfully created.
