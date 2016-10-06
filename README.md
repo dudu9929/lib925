@@ -1,6 +1,7 @@
 # README 
 # Library booking system
-# For a more direct and well-formatted README guide, you can refer to README.txt in this repository
+
+For a more direct and well-formatted README guide, you can refer to README.txt in this repository
 
 Preconfigured Admin:
 Email:   Dage@ncsu.edu
