@@ -1,0 +1,26 @@
+<div class="jumbotron">
+  <% if admin? %>
+      <h2>Hello!  <%= current_user.name %></h2>
+      <h2>You are a library Administrator! </h2>
+      <h2>This is a new library system of NC State.</h2>
+      <br>
+      <h4> <span class="glyphicon glyphicon-star" aria-hidden="true"></span>You can manage the whole system. </h4>
+      <br>
+
+      <h4>Yesterday you said tomorrow!!!</h4>
+  <%end%>
+
+  <%if member? %>
+      <h2>Hello!  <%= current_user.name %></h2>
+      <h2>This is a new library system of NC State.</h2>
+      <h2>You are a library member! </h2>
+      <br>
+      <h4> <span class="glyphicon glyphicon-star" aria-hidden="true"></span>  You can book rooms here. </h4>
+      <br>
+
+
+      <h4>Actions speak louder than words. </h4>
+
+  <%end%>
+</div>
+

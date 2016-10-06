@@ -1,0 +1,25 @@
+<h3>rooms</h3>
+
+
+
+
+<% @rooms.each do |room| %>
+    <div class="room">
+      <%= room.name %>
+      <%= room.building %>
+      <%= room.size%>
+      <%= link_to "Show room information", memshow_room_path(room) %>
+      <%= link_to "Show all bookings",  memind_room_bookings_path(room) %>
+      <%= link_to "Add booking", new_room_booking_path(room) %>
+    </div>
+<% end %>
+
+
+
+<%= form_tag(memroom_rooms_path(), :method => "get", id: "search-form") do %>
+    <%= text_field_tag :name, params[:name], placeholder: "Search Name of Room" %>
+    <%= text_field_tag :building, params[:building], placeholder: "Search Building of Room" %>
+    <%= text_field_tag :size, params[:size], placeholder: "Search size of Room" %>
+    <%= text_field_tag :status, params[:status], placeholder: "Search status of Room" %>
+    <%= submit_tag "Search", :name=> nil %>
+<% end %>

@@ -1,0 +1,36 @@
+<h3>Room Information</h3>
+<p>Room Number:
+  <%=   @room.name %>
+  <br>
+</p>
+<p>Building:
+  <%=   @room.building %>
+  <br>
+</p>
+<p>size:
+  <%=   @room.size %>
+  <br>
+</p>
+
+
+
+
+
+<p>status:
+<%= @room.status %>
+<br>
+
+<% if @room.status== "booked" %>
+<p>user:
+  <%= @room.user %>
+  <br>
+
+</p>
+<% else %>
+    <% end %>
+
+
+
+
+
+

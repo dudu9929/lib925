@@ -1,0 +1,28 @@
+<!-- app/views/link/_navigation.html.erb -->
+
+<nav class="navbar-inverse navbar-fixed-top" role="navigation">
+  <div class="container">
+    <div class="navbar-header">
+      <nav class="navbar navbar-light" style="background-color: #c8feff;">
+      <span class="glyphicon glyphicon-book navbar-brand" aria-hidden="true"></span>
+      <%= link_to 'Main Page', user_path(current_user), class: "navbar-brand" %>
+      <%= link_to 'Edit Your Profile', edit_user_path(current_user), class: "navbar-brand" %>
+      <%= link_to 'My Upcoming Bookings', mybooking_user_bookings_path(current_user), class: "navbar-brand" %>
+        <%= link_to 'My Booking History', myhistory_user_bookings_path(current_user) ,class: "navbar-brand"%>
+
+      <% if member? %>
+
+            <%= link_to 'All Rooms',  memroom_rooms_path, class: "navbar-brand" %>
+      <% end %>
+
+      <% if admin? %>
+            <%= link_to 'All Rooms', rooms_path, class: "navbar-brand" %>
+          <%= link_to 'All Users', users_path, class: "navbar-brand" %>
+          <%= link_to 'Booking Records', allhistory_user_bookings_path(current_user), class: "navbar-brand" %>
+          <%= link_to 'New Admin', new_user_path, class: "navbar-brand" %>
+      <% end %>
+      <%= link_to 'Logout', logout_path, class: "navbar-brand" %>
+        </nav>
+    </div>
+  </div>
+</nav>
