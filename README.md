@@ -13,7 +13,7 @@ When logged in as Admin:
 Welcome Page: click Main Page button in navigation bar, you can enter the welcome page for this booking system.    
 Edit her/his profile : Click the Edit Your Profile button in navigation bar, you can change the Name, E-mail and passward for this user.   
 Manage Admins:      
-(1) Click the New Admin button in navigation bar, you can add a new admin user to this system.
+(1) Click the New Admin button in navigation bar, you can add a new admin user to this system.     
 (2) Click the All Users button in navigation bar, you can see all the user's profile details. You can also edit or delete a user by "edit" or "destroy".   
 (3) Click on My Bookings button in navigation bar, you can see all your bookings. You can delete or edit your bookings here.   
 (4) Click on All History button in navigation bar, you can see all the booking history in this booking system.    
