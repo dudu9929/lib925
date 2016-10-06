@@ -55,6 +55,6 @@ edge case scenarios:
 
 (1)  If the admin deleted a member, all the bookings in the future and booking history of that member are also deleted.
 (2)  If the admin deleted a room, all the bookings in the future and booking history of that room are also deleted.
-(3)  If an admin who is not the preconfigured admin tries to delete itself or delete the preconfigured admin, the system will pop up an error message. And it can not delete what it want successfully.
+(3)  If an admin who is not the preconfigured admin tries to delete itself or delete the preconfigured admin, the system will pop up an error message.
 (4)  If the preconfigured admin tries to delete itself, the system will pop up an error,too. The attempt will be prevented.
 (5)  If a user tries to book a room ahead of the present time or 7 days after present time, there will also be an error. This attempt will be unsuccessfull.
